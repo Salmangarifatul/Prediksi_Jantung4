@@ -4,8 +4,8 @@ import numpy as np
 
 # membaca model
 try:
-    jantung_model = pickle.load(open('D:/Studi Independent 7 Mojadiapp/Tugas_Akhir/Jantung_model.sav', 'rb'))
-    scaler = pickle.load(open('D:/Studi Independent 7 Mojadiapp/Tugas_Akhir/scaler.sav', 'rb'))
+    jantung_model = pickle.load(open('Jantung_model.sav', 'rb'))
+    scaler = pickle.load(open('scaler.sav', 'rb'))
 except Exception as e:
     st.error(f"Error loading model or scaler: {e}")
     st.stop()
